@@ -1,0 +1,58 @@
+.blok1 {
+
+    height: 450px;
+    width: 750px;
+    background-color: black;
+}
+.blok2 {
+    margin-left: 4px;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    height: 250px;
+    width: 742px;
+    background-color: black;
+}
+body { margin: 1px;}
+.blok3 {
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    height: 96px;
+    width: 744px;
+    background-color: rgb(221, 112, 22);
+}
+.blok4 {
+    position: absolute;
+    left: 4px;
+    top: 350px;
+    height: 97px;
+    width: 743px;
+    background-color:  rgb(221, 118, 22); 
+
+}
+.blok5 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 250px;
+    width: 175px;
+    background-color: red;
+}
+.blok6 {
+    position: absolute;
+    top: 0px;
+    left: 175px;
+    height: 250px;
+    width: 195px;
+    background-color : rgb(1, 209, 105);
+}
+.blok7 {
+    position: absolute;
+    top: 0px;
+    left: 370px;
+    height: 250px;
+    width: 215px;
+    background-color : rgb(8, 142, 219); 
+}
+
