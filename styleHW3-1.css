@@ -1,4 +1,4 @@
-body {  margin: 1px;}
+ body {  margin: 1px;}
 .container {
    
     height: 450px;
@@ -33,12 +33,12 @@ body {  margin: 1px;}
     width: 200px;
     background-color: blue;
 }
-.black {
+/*.black {
     float: left;
     height: 250px;
     width: 170px;
-    background-color: black;
-}
+    background-color: gold;
+}*/
 .orangebottom {
     float: left;
     margin-left: 4px;
