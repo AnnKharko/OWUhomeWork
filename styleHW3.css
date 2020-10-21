@@ -1,75 +1,50 @@
-.blok1 {
-    position: relative;
+body {  margin: 1px;}
+.container {
+   
     height: 450px;
     width: 750px;
     background-color: black;
 }
-.blokcontainer {
-    position: relative;
-    left: 4px;
-    right: 4px;
-    top: 100px;
-
-    height: 250px;
-    width: 742px;   
-}
-body { margin: 1px;}
-.blok3 {
-    position: absolute;
-    left: 4px;
-    top: 4px; 
-    right: 4px;
+.orangetop {
+    float: left;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 4px;
     height: 96px;
     width: 742px;
     background-color: rgb(221, 118, 22); 
-    
 }
-
-.blok4 {
-    position: absolute;
-    left: 4px;
-    bottom: 4px;
-    right: 4px;
-    height: 96px;
-    width:  742px;
-    background-color:  rgb(221, 118, 22); 
+.red {
+    float: left;
+    margin-left: 4px;
+    height: 250px;
+    width: 180px;
+    background-color: red;
 }
-
-.blok5 {
-    position: absolute;
-    display: inline-block;
-
-    left: 0px;
+.green {
+    float: left;
     height: 250px;
     width: 190px;
-    background-color : rgb(238, 31, 24); 
+    background-color: green;
 }
-
-
-.blok6 {
-    position: absolute;
-    display: inline-block;
-    left: 190px;
-    height: 250px;
-    width: 202px;
-    background-color : rgb(1, 209, 105);
-}
-
-.blok7 {
-    position: absolute;
-    display: inline-block;
-   
-    right: 150px;
+.blue{
+    float: left;
     height: 250px;
     width: 200px;
-    background-color : rgb(8, 142, 219); 
+    background-color: blue;
 }
-.blok8 {
-    position: absolute;
-    display: inline-block;
-   
-    right: 0px;
+/*.black {
+    float: left;
     height: 250px;
-    width: 150px;
-    background-color : black; 
+    width: 170px;
+    background-color: gold;
+}*/
+.orangebottom {
+    float: left;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    height: 96px;
+    width: 742px;
+    background-color: rgb(221, 118, 22); 
 }
