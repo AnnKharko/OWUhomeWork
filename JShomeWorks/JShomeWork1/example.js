@@ -146,3 +146,21 @@ if (num1 < num2 && num1 < num3) {
     }
 }
 */
+
+//13. С помощью окна ввода, вызываемого методом prompt, сделать сложение двух чисел, а вывод результата при помощи метода alert.
+/*
+let a = prompt("Enter a number");
+let b = prompt("Enter a number");
+let result = parseInt(a) + parseInt(b);
+alert(result);
+*/
+
+// 14. С помощью окна ввода, вызываемого методом prompt, пользователь последовательно выводит имя, фамилию и возраст, а вам не обходимо вывести строку такого вида
+// Доброго вечера Иван Иванов, мои поздравления что вам 32 , а вывод результата при помощи метода alert
+/*
+let firstName = prompt("Enter your name.");
+let lastName = prompt("Enter your last name.");
+let age = prompt("How old are you?");
+alert("Good evening " + firstName + lastName + "," + " congratulations that you are " + age + " years old!");
+*/
+
