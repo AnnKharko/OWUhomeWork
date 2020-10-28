@@ -360,15 +360,16 @@ let last;
 let next;
 let next1;
 
-if ((a > b) && (a > c) )  { first = a, next = b, next1 = c;} 
-else  if ((b > a) && (b > c)) { first = b, next = a, next1 = c;} 
+if ((a < b) && (a < c) )  { first = a, next = b, next1 = c;} 
+else  if ((b < a) && (b < c)) { first = b, next = a, next1 = c;} 
      else { first = c, next = a, next1 = b; } 
-     console.log(first);
 
-if (next > next1) {second = next, last = next1;}
+if (next < next1) {second = next, last = next1;}
 else { second = next1, last = next;}
-console.log(first + second +last);
-*/
+console.log(first, second, last);
+*;
+
+
 
 //2.
 //Все параматры получаем с клавиатуры!!!!
