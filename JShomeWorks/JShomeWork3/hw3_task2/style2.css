@@ -1,0 +1,18 @@
+.forDiv {
+ background-color: rgb(73, 219, 200);
+ margin: 10px;
+}
+
+.new {
+    background-color: rgb(221, 224, 224);
+    margin: 20px;
+}
+.some {
+    color: rgb(70, 66, 66);
+}
+
+.forTable {
+    border : 1px solid black;
+    width : 708px;
+    height : 500px;
+}
