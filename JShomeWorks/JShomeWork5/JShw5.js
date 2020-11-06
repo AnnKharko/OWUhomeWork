@@ -36,19 +36,7 @@
 function Tag(name, action, attrs) {
     this.name = name;
     this.action = action;
-    this.attrs = attrs;
-
-
-     //this.discr = function() {
-       //console.log(` ${this.name} + <br> + ${this.action} + <br> + ${this.attrs} + <hr>`);
-   //     console.log(this.name + "<br>" + this.action + "<br>" + this.attrs + "<hr>");
-   // }; 
-
-    //this.LogThis = function() {
-    //    console.log(this);
-   // };
-
-    
+    this.attrs = attrs;    
 }
 
 //a
