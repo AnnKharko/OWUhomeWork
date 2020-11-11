@@ -297,7 +297,7 @@ let cars = [
 // Вывод: наибольший и наименьший индекс в массиве заданного элемента. Если такого элемента нет в массиве, выведите -1.
 
 // Пример:
-Arr = [1, 2, 3, 4, 4, 4, 4, 7, 7, 9, 14]
+
 // 1. Key = 1
 // Answer: MinIndex = 0, MaxIndex = 0.
 // 2. Key = 4
@@ -327,6 +327,16 @@ Arr = [1, 2, 3, 4, 4, 4, 4, 7, 7, 9, 14]
 //     console.log(` key ${x} :  -1`);
 // }
 // }
+
+
+
+//====================
+Arr = [1, 2, 3, 4, 4, 4, 4, 7, 7, 9, 14]
+
+function findIndexes(arr, value){
+    return arr.indexOf(value) === -1 ? -1 : `MinIndex :${arr.indexOf(value)}, MaxIndex : ${arr.lastIndexOf(value)}`;
+}
+console.log(findIndexes(Arr, 1));
 
 
 
