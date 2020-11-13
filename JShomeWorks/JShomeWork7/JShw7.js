@@ -186,22 +186,190 @@
 
 //9.- Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на стрелочки.
 
-let photoTape = document.createElement('div');
-photoTape.setAttribute('id', 'photoTape');
-document.body.appendChild(photoTape);
-let toRight = document.createElement('button');
-toRight.setAttribute('class', 'inner');
-toRight.innerText = 'NEXT >';
-let photo = document.createElement('div');
-photo.setAttribute('class', 'inner');
-let toLeft = document.createElement('button');
-toLeft.setAttribute('class', 'inner');
-toLeft.innerText = '< BACK';
+// let imgs= [
+//     { id : 01, img_url : '478435_570720752942149_1979203720_o.jpg'},
+//     { id : 02, img_url : '11696507_1102962059718013_9134864731511376241_o.jpg'},
+//     { id : 03, img_url : '13569044_1333060256708191_3053758229121612863_o.jpg'},
+//     { id : 01, img_url : '13754319_1349661581714725_2125466856320020351_n.jpg'},
+//     { id : 01, img_url : '99441036_3453372864676909_7216575621797773312_o.jpg'}
+// ];
+
+// let photoTape = document.createElement('div');
+// photoTape.setAttribute('id', 'photoTape');
+// document.body.appendChild(photoTape);
+// let toRight = document.createElement('button');
+// toRight.setAttribute('class', 'inner');
+// toRight.innerText = 'NEXT >';
+// let photo = document.createElement('img')
+// photo.setAttribute('id', 'img');
+// photo.setAttribute('class', 'inner');
+// let toLeft = document.createElement('button');
+// toLeft.setAttribute('class', 'inner');
+// toLeft.innerText = '< BACK';
+
+// photoTape.appendChild(toLeft);
+// photoTape.appendChild(photo);
+// photoTape.appendChild(toRight);
+
+// let index = 0;
+// photo.src = imgs[index].img_url;
+
+// toRight.onclick = () => {
+//    index + 1 > imgs.length - 1 ? index = 0 : index = index + 1
+//    photo.src = imgs[index].img_url
+// };
+// toLeft.onclick = () => {
+//     index - 1 < 0 ? index = imgs.length - 1 : index = index - 1
+//     photo.src = imgs[index].img_url
+// }
+
+
+//10.- Сворити масив не цензцрних слів.
+// Сворити інпут текстового типу.
+// Якщо людина вводить слово і воно міститься в масиві не цензурних слів
+// кинути алерт з попередженням.
+// Перевірку робити при натисканні на кнопку
+
+// let swearWords = ['arse', 'ass', 'asshole', 'bastard', 'bitch', 'bollocks', 'brotherfucker', 'bugger', 'bullshit', 'damn', 'fatherfucker', 'frigger', 'fuck', 'goddamn', 'godsdamn', 'hell', 'holy shit', 'horseshit', 'motherfucker', 'nigga', 'prick', 'shit', 'shit ass', 'slut', 'son of a bitch', 'son of a whore', 'twat'];
+
+// let input = document.createElement('input');
+// input.setAttribute('type', 'text');
+// input.setAttribute('placeholder', 'Enter text');
+// let btn = document.createElement('button');
+// btn.innerText = 'Send text'
+// document.body.appendChild(input);
+// document.body.appendChild(btn);
+
+// btn.onclick = (el) => {
+//    let answer = swearWords.some(txt =>  txt == input.value);
+//      if (answer) { alert('It is forbidden to enter obscence words') }
+//       else  {alert('Sent succesfully');}
+//  }
 
 
 
-photoTape.appendChild(toLeft);
-photoTape.appendChild(photo);
-photoTape.appendChild(toRight);
+ //11.- Сворити масив не цензцрних слів.
+// Сворити інпут текстового типу.
+// Потрібно перевіряти чи не містить ціле речення в собі погані слова.
+// Кинути алерт з попередженням у випадку якщо містить.
+// Перевірку робити при натисканні на кнопку
 
+// let swearWords = ['arse', 'ass', 'asshole', 'bastard', 'bitch', 'bollocks', 'brotherfucker', 'bugger', 'bullshit', 'damn', 'fatherfucker', 'frigger', 'fuck', 'goddamn', 'godsdamn', 'hell', 'holy shit', 'horseshit', 'motherfucker', 'nigga', 'prick', 'shit', 'shit ass', 'slut', 'son of a bitch', 'son of a whore', 'twat'];
+
+// let input = document.createElement('input');
+// input.setAttribute('type', 'text');
+// input.setAttribute('placeholder', 'Enter text');
+// let btn = document.createElement('button');
+// btn.innerText = 'Send text'
+// document.body.appendChild(input);
+// document.body.appendChild(btn);
+
+// btn.onclick = (el) => {
+// let x = [];
+// swearWords.forEach( txt => {
+//      let index = input.value.indexOf(txt);
+//      x.push(index);
+// }) 
+//  x.some(txt =>  txt != -1 ) ? alert('It is forbidden to enter obscence words') : alert('Sent succesfully') ;
+//   }
+
+
+//12. -- создать скрипт, который берет считывает на странице (rules.html) текст и делает сбоку меню-оглавление по всем заголовкам которые есть в тексте.
+// При клике на пункт оглавления вы должны отправляться к этому пункту в тексте
+
+// let h2arr = document.getElementsByTagName('h2');
+
+// let ul = document.createElement('ul');
+// let content = document.getElementById('content');
+
+// for (let i = 0; i < h2arr.length; i++) {
+//     let li = document.createElement('li');
+//     let a = document.createElement('a');
+//     let yak = 'yak' + i;
+//     a.href = '#' + yak;
+//     h2arr[i].setAttribute('id', yak);
+//     a.innerHTML = h2arr[i].innerText;
+//     a.style.textDecoration = 'none';
+//     li.appendChild(a);
+//     ul.appendChild(li);
+// }
+// content.appendChild(ul);
+// let wrap = document.getElementById('wrap');
+// content.style.width = '30%'
+// wrap.style.width = '70%';
+// content.style.float = 'left';
+// wrap.style.float = 'left';
+
+
+//13.-- взять массив пользователей
+let usersWithAddress = [
+    {id:1,name: 'vasya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
+    {id:2,name: 'petya', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 1}},
+    {id:3,name: 'kolya', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 121}},
+    {id:4,name: 'olya', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 90}},
+    {id:5,name: 'max', age: 30, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 115}},
+    {id:6,name: 'anya', age: 31, status: false, address: {city: 'Kyiv', street: 'Shevchenko', number: 2}},
+    {id:7,name: 'oleg', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 22}},
+    {id:8,name: 'andrey', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 43}},
+    {id:9,name: 'masha', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 12}},
+    {id:10,name: 'olya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
+    {id:11,name: 'max', age: 31, status: true, address: {city: 'Ternopil', street: 'Shevchenko', number: 121}}
+];
+// Создать три чекбокса. Каждый из них активирует фильтр для вышеуказаного массива. Фильтры могут работать как вместе так и по отдельности.
+// 1й - отфильтровывает пользователей со статусом false (осталяет со статусом false)
+// 2й - оставляет старше 29 лет включительно
+// 3й - оставляет тех у кого город киев
+// Данные выводить в документ
+
+let container = document.getElementById('container');
+let content = document.createElement('div');
+container.appendChild(content);
+ function displayContent(arr) {
+     let index = 0;
+    arr.forEach(x => {
+        index++;
+        let div = document.createElement('div');
+        div.innerText = `${index}.  User name ${x.name} , age${x.age} , status ${x.status}. Address : city ${x.address.city} , ${x.address.street} str, ${x.address.number}. `;
+        content.appendChild(div);
+    })
+ }
+
+
+ displayContent(usersWithAddress);
+
+ let input1 = document.createElement('input');
+ let input2 = document.createElement('input');
+ let input3 = document.createElement('input');
+ input1.setAttribute('type', 'checkbox');
+ input2.setAttribute('type', 'checkbox');
+ input3.setAttribute('type', 'checkbox');
+ let btn = document.createElement('button');
+ let label1 = document.createElement('label');
+ let label2 = document.createElement('label');
+ let label3 = document.createElement('label');
+
+ label1.innerText = 'With status false';
+label2.innerText = 'Older than 29';
+label3.innerText = 'live in Kyiv';
+btn.innerText = 'Filter on';
+
+container.appendChild(label1);
+container.appendChild(input1);
+container.appendChild(label2);
+container.appendChild(input2);
+container.appendChild(label3);
+container.appendChild(input3);
+container.appendChild(btn);
+
+btn.onclick = (ev) => {
+    let array = JSON.parse(JSON.stringify(usersWithAddress));
+     
+    if (input1.checked) array = array.filter(x => !x.status );
+    if (input2.checked) array = array.filter(x => x.age >= 29 );
+    if (input3.checked) array = array.filter(x => x.address.city === 'Kyiv');
+      
+    content.innerText = '';
+    displayContent(array);
+
+}
 

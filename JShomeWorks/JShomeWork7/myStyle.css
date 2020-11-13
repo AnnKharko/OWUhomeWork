@@ -52,7 +52,7 @@ a {
     font-size: 25px;
 }
 div {
-    height: 160px;
+    /* height: 160px; */
     width: 100%;
     margin: 5px;
     padding: 5px;
@@ -86,7 +86,7 @@ table {
 }
 
 #photoTape {
-    height: 200px;
+    height: 300px;
     width: 100%;
     background-color: rgb(71, 92, 71) ;
     display: flex;
@@ -94,4 +94,12 @@ table {
 }
 .inner {
     display: flex;
+}
+#img {
+    height: 300px;
+    width: 700px;
+}
+#container {
+    height: auto;
+    width: 100%;
 }
