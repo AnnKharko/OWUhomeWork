@@ -1,0 +1,74 @@
+#area {
+    width: 412px;
+    margin: 10px;
+    float: left;
+}
+
+
+#isAgree {
+margin: 20px;
+}
+#notAgree {
+    margin: 20px;
+}
+
+#submit {
+   width: 150px;
+    margin-right: 140px;
+    float: right;
+}
+
+/* #
+#
+# */
+
+#country {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#textArea {
+    margin-left: 20px;
+    float: left;
+}
+/* #save {
+    margin-top: 135px;
+    float: left;
+} */
+#btnL, #btnR {
+margin-left: 20px ;
+margin-top: 20px;
+display: none;
+}
+
+#formContact {
+    height: 300px ;
+    width: 470px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+label {
+    width : auto;
+}
+
+#email {
+    /* width: 70%; */
+    display: inline-block;
+}
+
+#dataOfBirth {
+    height: 15;
+
+    
+}
+/* #saveC {
+    margin-top: 252px;
+    float: left;
+} */
+#submit {
+    margin-top: 252px;
+    float: left;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleHw8.css">
+</head>
+<body>
+<!--     
+ <fieldset>
+     <legend>Leave a comment</legend>
+     <form name="form" id="form" autocomplete="on" oninput="saveForm(this)" >
+
+     <label for="fName">First name</label>
+     <input type="text" id="fName" name="fName" >
+     <label for="lName">Last name</label>
+     <input type="text" id="lName" name="lName" >
+     <input type="radio" id="male" name="gender" value="false" >
+     <label for="male">Male</label>
+     <input type="radio" id="female" name="gender" value="false">
+     <label for="female">Female</label> <br>
+     <textarea name="area" id="area" cols="30" rows="10" placeholder="Enter your comment"></textarea>
+     <input type="checkbox" id="isAgree" name="isAgree" value="false" >
+     <label for="isAgree">Completely agree</label> <br>
+     <input type="checkbox" id="notAgree" name="notAgree" value="false">
+     <label for="notAgree">Do not agree</label> <br>
+     <select name="country" id="country" >
+         <option value="default">Country</option>
+         <option value="ukraine">Ukraine</option>
+         <option value="spain">Spain</option>
+         <option value="italy">Italy</option>
+         <option value="france">France</option>
+         <option value="uk">United Kingdom</option>
+         <option value="germany">Germany</option>
+         <option value="poland">Poland</option>
+         <option value="finland">Finland</option>
+    </select>
+     <input id="submit" type="submit" value="Submit">
+ </form>
+ </fieldset>
+
+
+ <button id="btnL" value="Back">Back</button>
+ <button id="btnR" value="Forward">Forward</button> <br>
+<textarea name="textArea" id="textArea" cols="30" rows="10"></textarea>
+<button id="save" value="Save">Save</button> -->
+
+
+<!-- oninput="saveForm(this)" -->
+
+<fieldset>
+    <legend> Add contact</legend>
+    <form name="formContact" id="formContact" autocomplete="on">
+        <label for="fName">First name</label>
+        <input type="text" id="fName" name="fName">
+        <label for="lName">Last name</label>
+        <input type="text" id="lName" name="lName"> 
+        <label for="phoneNumber">Phone number</label>
+        <input type="number" id="phoneNumber" name="phoneNumber">
+        <label for="email">E-mail </label>
+        <input type="text" id="email" name="email"> 
+        <label for="company">Company </label>
+        <input type="text" id="company" name="company"> 
+        <label for="department">Department </label>
+        <input type="text" id="department" name="department">
+        <label for="dataOfBirth">Data of birth </label>
+        <input type="date" id="dataOfBirth" name="dataOfBirth"> 
+        <!-- <button id="saveC" name="saveC">Save contact</button> -->
+        <input id="submit" type="submit" value="Submit">
+
+</fieldset>
+<div id="content"></div>
+
+
+<script src="jsHW8.js"></script>
+</body>
+</html>
+
+
+<!--  Данные которые надо сохранять : ФИО, номер, почта, фирма, отдел, день рождения -->
+
